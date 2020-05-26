@@ -1,0 +1,11 @@
+<div class="container">
+    <fieldset class="form-group" [formGroup]="messageForm">
+        <p>Message:{{ message.value }}</p>
+        <input formControlName="message">
+        Result:
+        <div class="col-sm buttonsRow">
+            <button class="btn btn-success" (click)="formEncode()">Crypt</button>
+            <button class="btn btn-success" (click)="formDecode()">Decrypt</button>
+        </div>
+    </fieldset>
+</div>
